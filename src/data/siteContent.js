@@ -6,12 +6,18 @@ export const contactInfo = {
   address: 'Robertsganj, Sonbhadra, Uttar Pradesh (231216)',
   coverageAreas: [
     'Robertsganj',
+    'Churk',
+    'Hinduri',
+    'Preet Nagar',
+    'Tagore Nagar',
+    'Dharmasala',
+    'Salanpur',
     'Chopan',
-    'Ramgarh',
+    'Obra',
     'Ghorawal',
     'Shahganj',
+    'Ramgarh',
     'Madhupur',
-    'Obra',
     'Markundi',
     'Renukoot',
     'Duddhi',
@@ -83,47 +89,47 @@ export const treatmentMethods = [
 export const treatmentDetailPages = {
   paralysis: {
     slug: 'paralysis',
-    title: 'Paralysis Rehabilitation',
+    title: 'Paralysis Patients Physiotherapy Care',
     shortLabel: 'Paralysis Rehab',
     description:
-      'Focused home-based rehabilitation for paralysis patients to improve movement, balance, muscle activation, confidence, and daily functional ability.',
+      'Specialized home visit physiotherapy and rehabilitation for paralysis patients in Sonbhadra, Robertsganj, and near areas to improve movement, balance, and daily function.',
     overview:
-      'Paralysis rehabilitation needs patience, consistency, and close attention to movement recovery. Dr. Atul Pathak, DPT, provides structured physiotherapy support at home so families can avoid repeated travel and continue rehab in a familiar environment.',
-    signs: ['Weakness on one side of the body', 'Difficulty standing or walking', 'Poor balance and coordination', 'Reduced hand or leg function'],
-    approach: ['Mobility and balance retraining', 'Muscle activation and strengthening', 'Bed mobility and transfer practice', 'Home exercise and caregiver guidance']
+      'Paralysis rehabilitation and care for stroke or paralysis patients requires experienced hands-on support. Dr. Atul Pathak, DPT, offers expert home visit physiotherapy services for paralysis patients in Robertsganj (231216), Sonbhadra, Chopan, Obra, Churk, and nearby locations. Recovery-focused exercises are conducted at the patient\'s home, saving families the stress of travel.',
+    signs: ['Weakness or loss of movement on one side of the body', 'Difficulty standing or maintaining balance', 'Poor coordination and bed mobility', 'Reduced hand, arm, or leg functionality'],
+    approach: ['Home-based mobility and balance training', 'Targeted muscle activation and strengthening exercises', 'Bed mobility, positioning, and transfer practices', 'Caregiver training and custom home rehab plans']
   },
   cervical: {
     slug: 'cervical',
-    title: 'Cervical and Neck Pain Treatment',
+    title: 'Cervical Pain Relief and Treatment',
     shortLabel: 'Cervical Care',
     description:
-      'Targeted physiotherapy for cervical pain, neck stiffness, posture-related strain, nerve irritation, and limited neck movement.',
+      'Effective cervical pain relief therapy and neck pain treatment at home by Dr. Atul Pathak across Robertsganj, Sonbhadra, and nearby towns.',
     overview:
-      'Cervical pain often affects sleep, desk work, driving, and daily comfort. Treatment focuses on reducing stiffness, improving posture, restoring movement, and preventing repeated strain through practical home-based care.',
-    signs: ['Neck pain and stiffness', 'Pain radiating to shoulder or arm', 'Posture-related discomfort', 'Restricted neck movement'],
-    approach: ['Manual therapy for stiffness relief', 'Posture correction strategies', 'Stretching and strengthening', 'Daily activity modification advice']
+      'Cervical pain and neck stiffness can severely disrupt desk work, sleep, and daily activity. Treatment is designed for quick cervical pain relief and neck posture correction. With professional physiotherapy home service in Robertsganj, Churk, Hinduri, and across Sonbhadra, we restore pain-free neck movements and guide you on ergonomic adjustments.',
+    signs: ['Persistent neck pain, stiffness, or spasms', 'Numbness or radiating pain down the shoulder and arm', 'Postural strain from prolonged sitting/desk work', 'Restricted or painful head and neck movements'],
+    approach: ['Manual therapy and joint mobilization for stiffness relief', 'Posture correction and ergonomic guidance', 'Stretching and strengthening exercises for neck support', 'Custom home care plans to prevent recurring pain']
   },
   stroke: {
     slug: 'stroke',
-    title: 'Stroke Physiotherapy',
+    title: 'Stroke Rehabilitation & Physiotherapy',
     shortLabel: 'Stroke Rehab',
     description:
-      'Structured stroke rehabilitation designed to improve strength, coordination, walking ability, functional movement, and confidence at home.',
+      'Structured stroke rehabilitation and neuro-physiotherapy at home in Robertsganj and Sonbhadra to regain strength, movement, and gait confidence.',
     overview:
-      'Stroke recovery is strongest when therapy is regular, practical, and tailored to the patient’s current abilities. Home physiotherapy helps patients practice meaningful daily movement in the same environment where they live.',
-    signs: ['Difficulty walking or standing', 'Weakness after stroke', 'Reduced coordination', 'Challenges with daily activities'],
-    approach: ['Functional movement retraining', 'Gait and balance therapy', 'Strength and coordination exercises', 'Recovery-focused home programs']
+      'Stroke rehabilitation is most successful when it begins early and occurs in a comfortable environment. Dr. Atul Pathak provides tailored stroke physiotherapy home visits in Sonbhadra, Robertsganj, Churk, and Chopan, focusing on functional retraining, gait practice, and restoring independence right where the patient lives.',
+    signs: ['Post-stroke muscle weakness or paralysis', 'Difficulty standing, walking, or balancing (gait issues)', 'Impaired coordination and motor control', 'Challenges in executing basic activities of daily living (ADLs)'],
+    approach: ['Functional movement and posture retraining', 'Gait (walking) analysis and balance therapy', 'Strength, coordination, and motor control exercises', 'Step-by-step home programs for progressive recovery']
   },
   'post-surgery': {
     slug: 'post-surgery',
-    title: 'Post-Surgery Rehabilitation',
+    title: 'Post-Surgery Rehabilitation at Home',
     shortLabel: 'Post-Surgery Rehab',
     description:
-      'Progressive rehabilitation after surgery to reduce stiffness, regain movement, manage pain, and support safer recovery at home.',
+      'Post-surgery physiotherapy for joint replacement, fracture, and orthopedic recoveries in Robertsganj and Sonbhadra.',
     overview:
-      'The period after surgery is sensitive, and home visits can make recovery easier when travel is difficult. Treatment is paced around healing stage, pain level, and the patient’s ability to safely move and exercise.',
-    signs: ['Joint stiffness after surgery', 'Pain with movement', 'Reduced walking or mobility', 'Need for guided recovery exercise'],
-    approach: ['Safe early mobilization', 'Joint range-of-motion work', 'Strength progression', 'Pain management and recovery guidance']
+      'Recovering from orthopedic surgery like knee/hip replacements or fracture repairs can be tough when travel is limited. Dr. Atul Pathak delivers structured post-surgery rehabilitation directly to your home in Robertsganj (231216), Sonbhadra, Churk, and nearby regions. This ensures safe mobilization, reduced joint stiffness, and a faster return to daily activities.',
+    signs: ['Joint stiffness and swelling after surgery', 'Difficulty bearing weight or walking', 'Post-operative pain and muscle weakness', 'Limited range of motion in the operated joint'],
+    approach: ['Safe, guided early mobilization and weight-bearing', 'Passive and active range-of-motion exercises to reduce stiffness', 'Progressive strengthening and muscle conditioning', 'Pain management techniques and home safety advice']
   }
 };
 

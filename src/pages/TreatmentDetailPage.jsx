@@ -2,6 +2,7 @@ import { ArrowRight, CheckCircle2, PhoneCall } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
 import SectionHeading from '../components/SectionHeading';
 import { contactInfo, treatmentDetailPages } from '../data/siteContent';
+import SEO from '../components/SEO';
 
 export default function TreatmentDetailPage() {
   const { slug } = useParams();
@@ -28,8 +29,14 @@ export default function TreatmentDetailPage() {
   const bookingMessage = encodeURIComponent(`Hello Doctor, I want to book a home visit for ${treatment.title}.`);
 
   return (
-    <section className="section-spacing">
-      <div className="container-shell space-y-10">
+    <>
+      <SEO
+        title={`${treatment.title} | Home Visit`}
+        description={treatment.description}
+        keywords={`${treatment.title.toLowerCase()}, ${treatment.shortLabel.toLowerCase()}, home visit physiotherapy, sonbhadra, robertsganj, Dr Atul Pathak, paralysis care, cervical pain relief, stroke rehabilitation`}
+      />
+      <section className="section-spacing">
+        <div className="container-shell space-y-10">
         <div className="card-surface p-8 sm:p-12">
           <div className="inline-flex rounded-full bg-brand-100 px-4 py-1 text-xs font-bold uppercase tracking-[0.24em] text-brand-700 dark:bg-brand-900/30 dark:text-brand-200">
             {treatment.shortLabel}
@@ -88,5 +95,6 @@ export default function TreatmentDetailPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

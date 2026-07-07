@@ -2,12 +2,19 @@ import { Activity, ArrowRight, Brain, Dumbbell, HeartPulse, PersonStanding, Shie
 import { Link } from 'react-router-dom';
 import SectionHeading from '../components/SectionHeading';
 import { contactInfo, treatmentCategories, treatmentMethods } from '../data/siteContent';
+import SEO from '../components/SEO';
 
 const icons = [Brain, HeartPulse, Activity, ShieldPlus, Stethoscope, Dumbbell, PersonStanding, HeartPulse, Activity];
 
 export default function TreatmentsPage() {
   return (
-    <section className="section-spacing">
+    <>
+      <SEO
+        title="Physiotherapy Treatments in Sonbhadra | Paralysis, Cervical & Stroke Care"
+        description="Comprehensive physiotherapy treatments by Dr. Atul Pathak in Robertsganj & Sonbhadra. Specializing in paralysis patients recovery, cervical pain relief, stroke care, and post-surgery rehabilitation."
+        keywords="physiotherapy treatments, paralysis rehabilitation sonbhadra, cervical pain relief robertsganj, stroke care, post-surgery rehab, back pain, joint pain treatment"
+      />
+      <section className="section-spacing">
       <div className="container-shell space-y-12">
         <div className="card-surface p-8 sm:p-12">
           <div className="inline-flex rounded-full bg-brand-100 px-4 py-1 text-xs font-bold uppercase tracking-[0.24em] text-brand-700 dark:bg-brand-900/30 dark:text-brand-200">
@@ -96,5 +103,6 @@ export default function TreatmentsPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

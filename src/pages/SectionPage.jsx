@@ -1,10 +1,13 @@
 import { ArrowRight, Home, PhoneCall } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { contactInfo } from '../data/siteContent';
+import SEO from '../components/SEO';
 
-export default function SectionPage({ eyebrow, title, description, points = [] }) {
+export default function SectionPage({ eyebrow, title, description, points = [], seoTitle, seoDescription, seoKeywords }) {
   return (
-    <section className="section-spacing">
+    <>
+      <SEO title={seoTitle} description={seoDescription} keywords={seoKeywords} />
+      <section className="section-spacing">
       <div className="container-shell">
         <div className="mx-auto max-w-4xl">
           <div className="card-surface p-8 sm:p-12">
@@ -40,5 +43,6 @@ export default function SectionPage({ eyebrow, title, description, points = [] }
         </div>
       </div>
     </section>
+    </>
   );
 }
