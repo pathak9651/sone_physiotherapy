@@ -10,8 +10,8 @@ const fadeUp = {
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden pb-10 pt-10 sm:pb-16 sm:pt-16">
-      <div className="container-shell grid items-center gap-12 lg:grid-cols-[1.08fr_0.92fr]">
+    <section className="relative overflow-hidden pb-10 pt-10 sm:pb-16 sm:pt-16 2xl:pb-24 2xl:pt-24">
+      <div className="container-shell grid items-center gap-12 2xl:gap-16 lg:grid-cols-[1.08fr_0.92fr]">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -91,7 +91,7 @@ export default function HeroSection() {
             <img
               src={doctorImage}
               alt="Dr. Atul Pathak physiotherapist"
-              className="h-[520px] w-full rounded-[1.5rem] border border-white/60 bg-white object-cover object-top"
+              className="h-[520px] 2xl:h-[620px] w-full rounded-[1.5rem] border border-white/60 bg-white object-cover object-top"
             />
             <div className="absolute bottom-8 left-8 max-w-[320px] rounded-2xl border border-white/70 bg-white/90 px-4 py-3 shadow-soft backdrop-blur dark:border-slate-700 dark:bg-slate-900/90">
               <div className="text-xs font-bold uppercase tracking-[0.24em] text-brand-700 dark:text-brand-300">
