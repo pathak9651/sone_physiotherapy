@@ -19,9 +19,9 @@ const pageMap = {
       'Clinic consultation remains available as a secondary option.',
       'Treatment plans are personalized around pain, mobility, recovery stage, and daily routine.'
     ],
-    seoTitle: 'About Dr. Atul Pathak | Physiotherapy in Sonbhadra',
-    seoDescription: 'Learn more about Dr. Atul Pathak, a DPT-qualified physiotherapist with 7 years of experience. Specializing in paralysis patients and cervical pain relief home visits in Robertsganj, Sonbhadra, Chopan, Obra, Churk, and nearby locations.',
-    seoKeywords: 'Dr. Atul Pathak, physiotherapist Sonbhadra, physiotherapy Robertsganj, paralysis care, cervical pain relief, home visit physiotherapy'
+    seoTitle: 'Dr. Atul Pathak | Sone Physiotherapy Sonbhadra',
+    seoDescription: 'Learn about Dr. Atul Pathak, an experienced and famous physiotherapist at Sone Physiotherapy. Offering professional home visits nearby Robertsganj, Sonbhadra (231216), Chopan, Obra, and surrounding locations.',
+    seoKeywords: 'Dr. Atul Pathak, Sone Physiotherapy, experienced physiotherapist, famous physiotherapist, physiotherapy nearby, Robertsganj 231216, Sonbhadra'
   },
   services: {
     eyebrow: 'Services',
@@ -29,9 +29,9 @@ const pageMap = {
     description:
       'Services are designed for home-based care across pain management, rehabilitation, recovery support, and mobility improvement.',
     points: services.map((service) => `${service} - Clinic visit available as well`),
-    seoTitle: 'Physiotherapy Services in Sonbhadra & Robertsganj | Home Visits',
-    seoDescription: 'Explore expert physiotherapy services at home. Specialized treatments for paralysis rehabilitation, cervical pain relief, stroke physiotherapy, and post-surgery rehabilitation in Robertsganj (231216) and Sonbhadra district.',
-    seoKeywords: 'physiotherapy services, stroke rehab, post-surgery rehab, paralysis physiotherapy, neck pain relief, back pain treatment'
+    seoTitle: 'Sone Physiotherapy Services | Robertsganj & Sonbhadra',
+    seoDescription: 'Expert local physiotherapy services nearby Robertsganj (231216) & Sonbhadra. Experienced and working professional care for paralysis patients, cervical pain relief, and stroke rehabilitation.',
+    seoKeywords: 'physiotherapy services, physiotherapy nearby, famous physiotherapist, paralysis treatment, cervical pain relief, stroke rehabilitation'
   },
   'home-visit': {
     eyebrow: 'Home Visit',
@@ -39,9 +39,9 @@ const pageMap = {
     description:
       'From the first call to the treatment plan, everything is centered on making physiotherapy accessible at home for patients and families across Sonbhadra.',
     points: [...homeVisitBenefits.map((item) => item.title), ...processSteps],
-    seoTitle: 'Home Visit Physiotherapy in Robertsganj & Sonbhadra | Doorstep Care',
-    seoDescription: 'Professional home visit physiotherapy across Sonbhadra. Skip the travel and wait times—get high-quality physiotherapy for paralysis, cervical pain, and stroke recovery at your doorstep. Serving Robertsganj, Churk, Hinduri, and neighboring places.',
-    seoKeywords: 'home visit physiotherapy, doorstep physiotherapy, physiotherapist home visit, Robertsganj 231216, Sonbhadra'
+    seoTitle: 'Home Visit Physiotherapy nearby Robertsganj & Sonbhadra',
+    seoDescription: 'Get home visit physiotherapy nearby Robertsganj (231216) and Sonbhadra by Dr. Atul Pathak, an experienced and famous physiotherapist. Professional recovery programs for paralysis and stroke care.',
+    seoKeywords: 'home visit physiotherapy, physiotherapy nearby, physiotherapist near me, Robertsganj physiotherapist, Sonbhadra physiotherapy'
   },
   reviews: {
     eyebrow: 'Reviews',
@@ -49,8 +49,8 @@ const pageMap = {
     description:
       'Patients often mention easier recovery, less travel strain, and a more personal treatment experience when care happens at home.',
     points: ['Home treatment comfort', 'Fast recovery support', 'Convenient booking', 'Locally submitted reviews with ratings'],
-    seoTitle: 'Reviews & Patient Testimonials | Dr. Atul Pathak Physiotherapy',
-    seoDescription: 'Read reviews and testimonials from patients who received home visit physiotherapy in Robertsganj, Obra, Ghorawal, and Sonbhadra. Rated 5 stars for paralysis recovery, cervical pain relief, and stroke rehabilitation.',
+    seoTitle: 'Patient Reviews | Sone Physiotherapy by Dr. Atul Pathak',
+    seoDescription: 'Read testimonials from patients in Robertsganj (231216) & Sonbhadra who recovered under Dr. Atul Pathak, a famous and experienced physiotherapist. Rated 5 stars for home visit care.',
     seoKeywords: 'physiotherapy reviews, Dr Atul Pathak patient testimonials, home visit reviews, Robertsganj physiotherapist feedback'
   },
   contact: {
@@ -59,8 +59,8 @@ const pageMap = {
     description:
       'Booking is intentionally simple: call or WhatsApp to describe the issue, confirm your area, and schedule a home visit.',
     points: [...treatmentMethods, ...faqs.map((faq) => faq.question)],
-    seoTitle: 'Contact Dr. Atul Pathak | Book Home Visit Physiotherapy',
-    seoDescription: 'Get in touch to book your home visit physiotherapy session. Call +919651203151 or +918318903246. Serving Robertsganj (231216), Churk, Chopan, Obra, and Sonbhadra district.',
+    seoTitle: 'Book Sone Physiotherapy | Contact Dr. Atul Pathak',
+    seoDescription: 'Call +919651203151 or +918318903246 to book Sone Physiotherapy nearby Robertsganj (231216) and Sonbhadra. Consult with an experienced and famous working professional physiotherapist.',
     seoKeywords: 'book physiotherapy, call physiotherapist Sonbhadra, WhatsApp physiotherapy booking, Robertsganj clinic address'
   }
 };

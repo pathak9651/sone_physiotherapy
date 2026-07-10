@@ -6,9 +6,9 @@ export default function Footer() {
     <footer className="border-t border-slate-200 bg-slate-950 text-slate-300 dark:border-slate-800">
       <div className="container-shell grid gap-10 py-12 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
-          <div className="font-display text-2xl font-bold text-white">Dr. Atul Pathak</div>
+          <div className="font-display text-2xl font-bold text-white">Sone Physiotherapy</div>
           <p className="mt-4 max-w-md text-sm leading-7 text-slate-400">
-            Modern physiotherapy website focused on home visit treatment across Sonbhadra, with clinic consultation kept available as a secondary option.
+            Sone Physiotherapy by Dr. Atul Pathak, DPT. Providing experienced home visit physiotherapy nearby Robertsganj, Sonbhadra, Uttar Pradesh (231216) for paralysis patients, stroke recovery, and cervical pain relief.
           </p>
           <div className="mt-5 inline-flex rounded-full bg-mint-500/15 px-4 py-2 text-sm font-semibold text-mint-300">
             Home Visit Available

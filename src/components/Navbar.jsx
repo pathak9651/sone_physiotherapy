@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="container-shell flex items-center justify-between gap-4 py-4">
         <Link to="/" className="min-w-0">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Dr. Atul Pathak logo" className="h-12 w-12 rounded-full border border-white/70 object-cover shadow-md dark:border-slate-700" />
+            <img src={logo} alt="Dr. Atul Pathak - Sone Physiotherapy Sonbhadra Robertsganj" className="h-12 w-12 rounded-full border border-white/70 object-cover shadow-md dark:border-slate-700" />
             <div>
               <div className="font-display text-lg font-bold text-slate-900 dark:text-white sm:text-xl">Dr. Atul Pathak</div>
               <div className="text-xs font-medium uppercase tracking-[0.24em] text-brand-700 dark:text-brand-300">

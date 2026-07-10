@@ -21,12 +21,11 @@ export default function HeroSection() {
           <motion.div variants={fadeUp} className="mb-5 inline-flex rounded-full border border-brand-200 bg-white/80 px-4 py-2 text-xs font-bold uppercase tracking-[0.25em] text-brand-700 shadow-soft dark:border-brand-900 dark:bg-slate-900/70 dark:text-brand-200">
             Home Visit Physiotherapy is our primary focus
           </motion.div>
-          <motion.h1 variants={fadeUp} className="font-display text-4xl font-bold leading-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
-            Expert Physiotherapy <span className="text-brand-600">at Your Home</span>
+           <motion.h1 variants={fadeUp} className="font-display text-4xl font-bold leading-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+            Sone Physiotherapy by <span className="text-brand-600">Dr. Atul Pathak</span>
           </motion.h1>
           <motion.p variants={fadeUp} className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300 sm:text-xl">
-            Skip the Travel - Get Professional Care at Your Doorstep. Personalized physiotherapy across Sonbhadra with
-            special support for pain relief, post-surgery rehab, stroke recovery, and elderly care.
+            Skip the Travel - Get Professional Care at Your Doorstep. Dr. Atul Pathak is an experienced, working professional physiotherapist offering home visit physiotherapy in Robertsganj (231216), Sonbhadra, and surrounding areas. Specialized in paralysis patients, stroke recovery, and cervical pain relief.
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -98,7 +97,7 @@ export default function HeroSection() {
                 Dr. Atul Pathak, DPT
               </div>
               <div className="mt-1 text-sm font-semibold text-slate-700 dark:text-slate-100">
-                7 years of experience with special expertise in paralysis and cervical patient care
+                Experienced & working professional physiotherapist at Sone Physiotherapy Sonbhadra (231216)
               </div>
             </div>
           </div>
