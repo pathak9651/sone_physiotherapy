@@ -1,4 +1,5 @@
 import { Activity, ArrowRight, Bone, HeartHandshake, ShieldPlus, StretchHorizontal, UserRound } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import SectionHeading from './SectionHeading';
 import { services } from '../data/siteContent';
 
@@ -34,6 +35,15 @@ export default function ServicesSection() {
               </div>
             );
           })}
+        </div>
+        <div className="mt-10 flex justify-center">
+          <Link
+            to="/services"
+            className="btn-secondary"
+          >
+            View All Services
+            <ArrowRight size={16} />
+          </Link>
         </div>
       </div>
     </section>

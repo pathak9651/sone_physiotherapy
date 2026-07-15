@@ -66,6 +66,30 @@ export default function ContactSection() {
                   ))}
                 </div>
               </div>
+
+              {/* Google Maps Embed - Local SEO */}
+              <div className="overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-700">
+                <div className="bg-slate-50 px-4 py-2 dark:bg-slate-950/70">
+                  <div className="text-xs font-bold uppercase tracking-[0.22em] text-brand-700 dark:text-brand-300">Find Us on Map</div>
+                </div>
+                <iframe
+                  title="Sone Physiotherapy location map - Pannuganj Road Robertsganj Sonbhadra"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.1234567890123!2d83.0667!3d24.6833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQxJzAwLjAiTiA4M8KwMDQnMDAuMCJF!5e0!3m2!1sen!2sin!4v1000000000000"
+                  width="100%"
+                  height="200"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  aria-label="Sone Physiotherapy clinic location on Google Maps - Pannuganj Road, Robertsganj, Sonbhadra"
+                />
+                <div className="flex items-center gap-2 bg-slate-50 px-4 py-3 dark:bg-slate-950/70">
+                  <MapPin size={14} className="text-brand-700 dark:text-brand-300" />
+                  <span className="text-xs font-medium text-slate-600 dark:text-slate-300">
+                    Sone Physiotherapy, Pannuganj Road, Robertsganj, Sonbhadra, UP - 231216
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
 

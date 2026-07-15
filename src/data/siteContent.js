@@ -131,6 +131,83 @@ export const treatmentDetailPages = {
       'Recovering from orthopedic surgery like knee/hip replacements or fracture repairs can be tough when travel is limited. Dr. Atul Pathak delivers structured post-surgery rehabilitation directly to your home in Robertsganj (231216), Sonbhadra, Churk, and nearby regions. This ensures safe mobilization, reduced joint stiffness, and a faster return to daily activities.',
     signs: ['Joint stiffness and swelling after surgery', 'Difficulty bearing weight or walking', 'Post-operative pain and muscle weakness', 'Limited range of motion in the operated joint'],
     approach: ['Safe, guided early mobilization and weight-bearing', 'Passive and active range-of-motion exercises to reduce stiffness', 'Progressive strengthening and muscle conditioning', 'Pain management techniques and home safety advice']
+  },
+  'back-pain': {
+    slug: 'back-pain',
+    title: 'Back Pain Treatment & Relief at Home',
+    shortLabel: 'Back Pain Relief',
+    description:
+      'Professional home visit physiotherapy for lower back pain, lumbar pain, and spine discomfort in Robertsganj and Sonbhadra by Dr. Atul Pathak, DPT.',
+    overview:
+      'Back pain is one of the most common reasons people seek physiotherapy. Dr. Atul Pathak provides effective home-based back pain treatment across Robertsganj (231216), Sonbhadra, Churk, and nearby areas. Treatment focuses on relieving pain quickly, improving posture, strengthening supporting muscles, and preventing recurrence through guided exercises and manual therapy.',
+    signs: ['Persistent lower back or lumbar pain', 'Sharp or dull pain that worsens with sitting, bending, or lifting', 'Stiffness and reduced movement in the spine', 'Pain radiating into the hips or buttocks'],
+    approach: ['Manual therapy and spinal mobilization for pain relief', 'Targeted core-strengthening and stabilization exercises', 'Posture correction and ergonomic guidance for daily activities', 'Heat, electrotherapy, and progressive home exercise plans']
+  },
+  'knee-pain': {
+    slug: 'knee-pain',
+    title: 'Knee Pain Treatment & Rehabilitation',
+    shortLabel: 'Knee Pain Care',
+    description:
+      'Expert home visit physiotherapy for knee pain, osteoarthritis, ligament injuries, and knee stiffness in Robertsganj and Sonbhadra.',
+    overview:
+      'Knee pain can significantly limit mobility and daily activities, especially in elderly patients and those with arthritis. Dr. Atul Pathak offers tailored home-based knee pain treatment and rehabilitation in Robertsganj (231216), Sonbhadra, and surrounding areas, focusing on reducing pain, improving joint movement, and strengthening the surrounding muscles to provide long-term relief.',
+    signs: ['Pain, swelling, or stiffness in the knee joint', 'Difficulty climbing stairs, squatting, or walking', 'Clicking or locking sensation in the knee', 'Knee weakness or feeling of instability'],
+    approach: ['Joint mobilization and manual therapy for stiffness', 'Targeted strengthening exercises for quadriceps and hamstrings', 'Balance and gait training to reduce strain on the knee', 'Electrotherapy and cold/heat application for pain management']
+  },
+  'sports-injury': {
+    slug: 'sports-injury',
+    title: 'Sports Injury Rehabilitation at Home',
+    shortLabel: 'Sports Rehab',
+    description:
+      'Professional sports injury rehabilitation and physiotherapy at home in Robertsganj and Sonbhadra for sprains, strains, ligament injuries, and muscle recovery.',
+    overview:
+      'Sports injuries can sideline athletes and active individuals for weeks if not treated properly. Dr. Atul Pathak provides expert sports injury rehabilitation at home in Robertsganj (231216), Sonbhadra, and surrounding areas. From initial pain management to complete functional recovery, treatment is designed to get you back to full activity safely and quickly.',
+    signs: ['Sprains, strains, or muscle tears from sports activity', 'Swelling, bruising, or tenderness around joints', 'Reduced strength, flexibility, or range of motion after injury', 'Difficulty returning to normal activity or sports performance'],
+    approach: ['RICE protocol guidance and early pain management', 'Progressive strengthening and flexibility restoration', 'Functional movement training and sport-specific exercises', 'Return-to-activity planning and injury-prevention strategies']
+  },
+  'frozen-shoulder': {
+    slug: 'frozen-shoulder',
+    title: 'Frozen Shoulder Treatment & Relief',
+    shortLabel: 'Frozen Shoulder',
+    description:
+      'Effective home visit physiotherapy for frozen shoulder (adhesive capsulitis) in Robertsganj and Sonbhadra to restore movement and relieve pain.',
+    overview:
+      'Frozen shoulder, or adhesive capsulitis, causes painful stiffness and severely restricted shoulder movement that can last for months or years without proper treatment. Dr. Atul Pathak offers specialized home-based frozen shoulder physiotherapy in Robertsganj (231216), Sonbhadra, and surrounding areas, using manual therapy, progressive stretching, and targeted exercises to restore full shoulder function.',
+    signs: ['Gradual onset of shoulder pain and stiffness', 'Severely limited shoulder movement in all directions', 'Pain that worsens at night or when reaching overhead', 'Difficulty with daily activities like dressing or combing hair'],
+    approach: ['Manual therapy and joint capsule stretching', 'Progressive range-of-motion and mobilization exercises', 'Pendulum and shoulder-specific rehabilitation programs', 'Pain management and heat therapy for faster recovery']
+  },
+  'sciatica': {
+    slug: 'sciatica',
+    title: 'Sciatica Pain Relief & Treatment',
+    shortLabel: 'Sciatica Care',
+    description:
+      'Targeted home visit physiotherapy for sciatica, nerve pain, and radiating leg pain in Robertsganj and Sonbhadra by Dr. Atul Pathak.',
+    overview:
+      'Sciatica causes sharp, radiating pain along the sciatic nerve from the lower back through the hips and down the leg. Dr. Atul Pathak provides effective home-based sciatica treatment in Robertsganj (231216), Sonbhadra, and nearby areas, addressing the root cause of nerve compression with manual therapy, nerve-gliding exercises, and posture correction to provide lasting relief.',
+    signs: ['Sharp or burning pain radiating from lower back down the leg', 'Numbness, tingling, or weakness in the leg or foot', 'Pain that worsens with sitting, coughing, or sneezing', 'Difficulty standing or walking for extended periods'],
+    approach: ['Nerve mobilization and neural tension release techniques', 'Spinal decompression exercises and traction therapy', 'Core and lumbar strengthening to reduce nerve pressure', 'Posture correction and ergonomic advice for long-term relief']
+  },
+  'home-physiotherapy': {
+    slug: 'home-physiotherapy',
+    title: 'Home Visit Physiotherapy Services',
+    shortLabel: 'Home Physiotherapy',
+    description:
+      'Professional home visit physiotherapy by Dr. Atul Pathak across Robertsganj, Sonbhadra, Churk, Chopan, and nearby areas. Convenient doorstep care for all conditions.',
+    overview:
+      'Home visit physiotherapy is the primary service offered by Dr. Atul Pathak, DPT, at Sone Physiotherapy. Serving Robertsganj (231216), Sonbhadra, Churk, Chopan, Obra, and the entire Sonbhadra district, this service brings professional, clinic-quality physiotherapy directly to your home. Ideal for patients who cannot travel, elderly patients, post-surgery recovery, and those who prefer private, one-on-one care in their own environment.',
+    signs: ['Inability or difficulty travelling to a clinic', 'Elderly patients requiring regular rehabilitation', 'Post-surgery patients needing progressive home recovery', 'Chronic conditions requiring consistent treatment and monitoring'],
+    approach: ['One-on-one personalized treatment sessions at your home', 'Portable electrotherapy, exercise, and manual therapy support', 'Customized home exercise programs with follow-up guidance', 'Family and caregiver education for between-session care']
+  },
+  'posture-correction': {
+    slug: 'posture-correction',
+    title: 'Posture Correction & Spine Care',
+    shortLabel: 'Posture Care',
+    description:
+      'Home-based posture correction physiotherapy and spine care by Dr. Atul Pathak in Robertsganj and Sonbhadra for work-related pain and postural imbalance.',
+    overview:
+      'Poor posture from desk work, prolonged sitting, or incorrect daily habits can lead to chronic back, neck, and shoulder pain. Dr. Atul Pathak provides targeted posture correction and spine care physiotherapy at home in Robertsganj (231216), Sonbhadra, and surrounding areas. Treatment addresses the root postural problems with corrective exercises, manual therapy, and ergonomic guidance to relieve current pain and prevent future issues.',
+    signs: ['Chronic neck, upper back, or shoulder pain from desk work', 'Rounded shoulders, forward head posture, or hunched back', 'Frequent headaches linked to neck and shoulder tension', 'Back pain that worsens after prolonged sitting or standing'],
+    approach: ['Postural assessment and correction exercises', 'Spinal alignment and ergonomic education for work and daily life', 'Strengthening of core, back, and postural muscles', 'Stretching routines and movement re-training for long-term correction']
   }
 };
 
@@ -157,11 +234,13 @@ export const treatmentCategories = [
   },
   {
     title: 'Back and Joint Pain Management',
-    description: 'Home-based treatment for lower back pain, knee pain, shoulder pain, arthritis discomfort, and joint mobility problems.'
+    description: 'Home-based treatment for lower back pain, knee pain, shoulder pain, arthritis discomfort, and joint mobility problems.',
+    detailSlug: 'back-pain'
   },
   {
     title: 'Sports Injury Recovery',
-    description: 'Rehab support for sprains, strains, muscle tightness, ligament issues, and safe return-to-activity movement plans.'
+    description: 'Rehab support for sprains, strains, muscle tightness, ligament issues, and safe return-to-activity movement plans.',
+    detailSlug: 'sports-injury'
   },
   {
     title: 'Elderly Physiotherapy',
@@ -169,11 +248,32 @@ export const treatmentCategories = [
   },
   {
     title: 'Posture and Spine Care',
-    description: 'Therapy for postural imbalance, work-related stiffness, spinal discomfort, and daily movement correction.'
+    description: 'Therapy for postural imbalance, work-related stiffness, spinal discomfort, and daily movement correction.',
+    detailSlug: 'posture-correction'
   },
   {
     title: 'Exercise and Functional Therapy',
     description: 'Guided strengthening, stretching, flexibility work, and functional exercise routines customized for each patient.'
+  },
+  {
+    title: 'Frozen Shoulder Treatment',
+    description: 'Specialized physiotherapy for frozen shoulder (adhesive capsulitis) to restore full range of motion and relieve pain.',
+    detailSlug: 'frozen-shoulder'
+  },
+  {
+    title: 'Sciatica Pain Relief',
+    description: 'Targeted treatment for sciatic nerve pain, radiating leg pain, and lumbar nerve compression for lasting relief.',
+    detailSlug: 'sciatica'
+  },
+  {
+    title: 'Knee Pain & Rehabilitation',
+    description: 'Comprehensive knee pain treatment for osteoarthritis, ligament injuries, stiffness, and post-surgery recovery.',
+    detailSlug: 'knee-pain'
+  },
+  {
+    title: 'Home Visit Physiotherapy',
+    description: 'Doorstep physiotherapy sessions for all conditions – bringing clinic-quality care to your home across Sonbhadra.',
+    detailSlug: 'home-physiotherapy'
   }
 ];
 

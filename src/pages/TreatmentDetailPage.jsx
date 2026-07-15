@@ -31,9 +31,10 @@ export default function TreatmentDetailPage() {
   return (
     <>
       <SEO
-        title={`${treatment.title} | Home Visit`}
+        title={treatment.title}
         description={treatment.description}
         keywords={`${treatment.title.toLowerCase()}, ${treatment.shortLabel.toLowerCase()}, home visit physiotherapy, sonbhadra, robertsganj, Dr Atul Pathak, paralysis care, cervical pain relief, stroke rehabilitation`}
+        canonical={`https://sonephysio.online/treatments/${treatment.slug}`}
       />
       <section className="section-spacing">
         <div className="container-shell space-y-10">

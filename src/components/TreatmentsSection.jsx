@@ -1,4 +1,5 @@
-import { Check } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import SectionHeading from './SectionHeading';
 import { treatmentMethods } from '../data/siteContent';
 
@@ -43,6 +44,12 @@ export default function TreatmentsSection() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container-shell mt-8 flex justify-center">
+        <Link to="/treatments" className="btn-secondary">
+          Explore All Treatments
+          <ArrowRight size={16} />
+        </Link>
       </div>
     </section>
   );
