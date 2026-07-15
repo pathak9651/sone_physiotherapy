@@ -39,6 +39,7 @@ export const navLinks = [
   { label: 'Services', href: '/services' },
   { label: 'Treatments', href: '/treatments' },
   { label: 'Home Visit', href: '/home-visit' },
+  { label: 'Reviews', href: '/reviews' },
   { label: 'Contact', href: '/contact' }
 ];
 
@@ -234,5 +235,23 @@ export const initialReviews = [
     date: '2026-02-10',
     comment:
       'Very helpful for elderly care. We did not need to travel, and the progress at home was clearly visible within a few sessions.'
+  },
+  {
+    id: 'review-4',
+    name: 'Amit Kumar',
+    location: 'Chopan',
+    rating: 5,
+    date: '2026-01-24',
+    comment:
+      'The home visit saved a lot of time for my father. Treatment was punctual, careful, and the exercises were easy to continue between sessions.'
+  },
+  {
+    id: 'review-5',
+    name: 'Neha Gupta',
+    location: 'Churk',
+    rating: 5,
+    date: '2026-01-08',
+    comment:
+      'Good physiotherapy support at home for neck and shoulder pain. The advice was practical and I felt improvement after regular sessions.'
   }
 ];

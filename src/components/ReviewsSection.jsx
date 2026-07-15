@@ -1,5 +1,5 @@
-import { Trash2, UserRoundPen } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { ChevronDown, ChevronUp, Trash2, UserRoundPen } from 'lucide-react';
+import { useEffect, useMemo, useState } from 'react';
 import SectionHeading from './SectionHeading';
 import StarRating from './StarRating';
 import { initialReviews } from '../data/siteContent';
@@ -7,7 +7,9 @@ import { useLocalStorage } from '../hooks/useLocalStorage';
 
 const REVIEW_KEY = 'dr-atul-reviews';
 const ADMIN_FLAG_KEY = 'dr-atul-admin-mode';
-const ADMIN_PASSCODE = 'atul-admin';
+const ADMIN_PASSCODE = '1997';
+const REVIEW_SEED_VERSION_KEY = 'dr-atul-review-seed-version';
+const REVIEW_SEED_VERSION = 'show-more-ratings-v1';
 
 function formatDate(dateString) {
   return new Intl.DateTimeFormat('en-IN', {
@@ -20,6 +22,7 @@ function formatDate(dateString) {
 export default function ReviewsSection() {
   const [reviews, setReviews] = useLocalStorage(REVIEW_KEY, initialReviews);
   const [isAdmin, setIsAdmin] = useLocalStorage(ADMIN_FLAG_KEY, false);
+  const [showAllReviews, setShowAllReviews] = useState(false);
   const [form, setForm] = useState({
     name: '',
     location: '',
@@ -27,25 +30,52 @@ export default function ReviewsSection() {
     comment: ''
   });
 
+  useEffect(() => {
+    if (localStorage.getItem(REVIEW_SEED_VERSION_KEY) === REVIEW_SEED_VERSION) {
+      return;
+    }
+
+    setReviews((currentReviews) => {
+      const savedReviewIds = new Set(currentReviews.map((review) => review.id));
+      const missingSeedReviews = initialReviews.filter((review) => !savedReviewIds.has(review.id));
+      return missingSeedReviews.length ? [...currentReviews, ...missingSeedReviews] : currentReviews;
+    });
+    localStorage.setItem(REVIEW_SEED_VERSION_KEY, REVIEW_SEED_VERSION);
+  }, [setReviews]);
+
   const averageRating = useMemo(() => {
     const total = reviews.reduce((sum, review) => sum + review.rating, 0);
     return reviews.length ? (total / reviews.length).toFixed(1) : '0.0';
   }, [reviews]);
 
+  const recentReviews = useMemo(() => {
+    return [...reviews].sort((firstReview, secondReview) => {
+      const firstDate = new Date(firstReview.createdAt || firstReview.date).getTime();
+      const secondDate = new Date(secondReview.createdAt || secondReview.date).getTime();
+      return secondDate - firstDate;
+    });
+  }, [reviews]);
+
+  const visibleReviews = showAllReviews ? recentReviews : recentReviews.slice(0, 4);
+  const hiddenReviewsCount = Math.max(recentReviews.length - visibleReviews.length, 0);
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    const submittedAt = new Date().toISOString();
     const nextReview = {
       id: crypto.randomUUID(),
       name: form.name.trim(),
       location: form.location.trim() || 'Sonbhadra',
       rating: form.rating,
       comment: form.comment.trim(),
-      date: new Date().toISOString().slice(0, 10)
+      date: submittedAt.slice(0, 10),
+      createdAt: submittedAt
     };
 
     setReviews((currentReviews) => [nextReview, ...currentReviews]);
     setForm({ name: '', location: '', rating: 5, comment: '' });
+    setShowAllReviews(false);
   };
 
   const handleAdminToggle = () => {
@@ -92,7 +122,7 @@ export default function ReviewsSection() {
             </div>
 
             <div className="grid gap-5">
-              {reviews.map((review) => (
+              {visibleReviews.map((review) => (
                 <article key={review.id} className="card-surface p-6">
                   <div className="flex flex-wrap items-start justify-between gap-4">
                     <div>
@@ -118,6 +148,27 @@ export default function ReviewsSection() {
                   <p className="mt-4 text-sm leading-7 text-slate-600 dark:text-slate-300">{review.comment}</p>
                 </article>
               ))}
+
+              {recentReviews.length > 4 ? (
+                <button
+                  type="button"
+                  onClick={() => setShowAllReviews((current) => !current)}
+                  className="btn-secondary justify-self-center px-5 py-2.5"
+                  aria-expanded={showAllReviews}
+                >
+                  {showAllReviews ? (
+                    <>
+                      Show Less Ratings
+                      <ChevronUp size={18} />
+                    </>
+                  ) : (
+                    <>
+                      Show More Ratings ({hiddenReviewsCount})
+                      <ChevronDown size={18} />
+                    </>
+                  )}
+                </button>
+              ) : null}
             </div>
           </div>
 

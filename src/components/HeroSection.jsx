@@ -47,7 +47,7 @@ export default function HeroSection() {
             {highlights.map((item) => (
               <div
                 key={item}
-                className="inline-flex items-center gap-2 rounded-full border border-mint-200 bg-mint-50 px-4 py-2 text-sm font-semibold text-mint-800 dark:border-mint-900/70 dark:bg-mint-950/40 dark:text-mint-200"
+                className="inline-flex items-center gap-2 rounded-full border border-mint-200 bg-mint-50 px-4 py-2 text-sm font-semibold text-mint-800 dark:border-mint-700/70 dark:bg-mint-900/55 dark:text-mint-50"
               >
                 <CheckCircle2 size={16} />
                 {item}

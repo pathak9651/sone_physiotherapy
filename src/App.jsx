@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
 import { faqs, homeVisitBenefits, processSteps, services, treatmentMethods } from './data/siteContent';
 import HomePage from './pages/HomePage';
+import ReviewsPage from './pages/ReviewsPage';
 import SectionPage from './pages/SectionPage';
 import TreatmentDetailPage from './pages/TreatmentDetailPage';
 import TreatmentsPage from './pages/TreatmentsPage';
@@ -77,7 +78,7 @@ export default function App() {
           <Route path="/treatments" element={<TreatmentsPage />} />
           <Route path="/treatments/:slug" element={<TreatmentDetailPage />} />
           <Route path="/home-visit" element={<SectionPage {...pageMap['home-visit']} />} />
-          <Route path="/reviews" element={<SectionPage {...pageMap.reviews} />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/contact" element={<SectionPage {...pageMap.contact} />} />
           <Route path="*" element={<SectionPage {...pageMap.about} />} />
         </Route>

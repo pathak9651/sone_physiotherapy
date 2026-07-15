@@ -21,7 +21,7 @@ export default function CoverageSection() {
               {contactInfo.coverageAreas.map((area) => (
                 <div
                   key={area}
-                  className="rounded-full border border-brand-200 bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-800 dark:border-brand-900 dark:bg-brand-950/30 dark:text-brand-200"
+                  className="rounded-full border border-brand-200 bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-800 dark:border-brand-700/70 dark:bg-brand-900/55 dark:text-brand-50"
                 >
                   {area}
                 </div>

@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 /**
  * SEO component to dynamically update document metadata (title, descriptions, keywords, Open Graph, etc.)
  */
-export default function SEO({ title, description, keywords, canonical }) {
+export default function SEO({ title, description, keywords, canonical, jsonLd }) {
   const location = useLocation();
   const siteUrl = 'https://sonephysio.online'; // Fallback custom domain
 
@@ -79,7 +79,22 @@ export default function SEO({ title, description, keywords, canonical }) {
       twitterMeta.setAttribute('content', content);
     });
 
-  }, [title, description, keywords, canonical, location]);
+    // 7. Update page-specific structured data
+    const structuredDataId = 'page-json-ld';
+    let structuredDataScript = document.getElementById(structuredDataId);
+    if (jsonLd) {
+      if (!structuredDataScript) {
+        structuredDataScript = document.createElement('script');
+        structuredDataScript.id = structuredDataId;
+        structuredDataScript.type = 'application/ld+json';
+        document.head.appendChild(structuredDataScript);
+      }
+      structuredDataScript.textContent = JSON.stringify(jsonLd);
+    } else if (structuredDataScript) {
+      structuredDataScript.remove();
+    }
+
+  }, [title, description, keywords, canonical, location, jsonLd]);
 
   return null;
 }
